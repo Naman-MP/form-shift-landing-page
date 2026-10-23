@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0b0b">
+  <meta name="description" content="Original 3D-printed desk objects, articulated creatures, keycaps and stands—made to order in India.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23ff5c35'/%3E%3Cpath d='M14 18h36v8H24v8h22v8H24v12H14z' fill='%230b0b0b'/%3E%3C/svg%3E">
+  <title>FORM/SHIFT — 3D printed objects with personality</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Syne:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#shop">Skip to products</a>
+
+  <div class="announcement" role="status">
+    <span>Made to order in India</span><i></i><span>Free shipping over ₹1,499</span><i></i><span>Original designs</span>
+  </div>
+
+  <header class="site-header" data-header>
+    <a class="brand" href="#top" aria-label="FORM SHIFT home">
+      <span>FORM</span><b>/</b><span>SHIFT</span>
+    </a>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#shop">Shop</a>
+      <a href="#customize">Customize</a>
+      <a href="#process">How it's made</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="header-actions">
+      <button class="text-button menu-button" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu">Menu</button>
+      <button class="cart-button" type="button" data-cart-open aria-label="Open shopping bag">
+        Bag <span data-cart-count>0</span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" data-mobile-menu hidden>
+      <a href="#shop">Shop</a>
+      <a href="#customize">Customize</a>
+      <a href="#process">How it's made</a>
+      <a href="#faq">FAQ</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow reveal">Designed digitally. Made physically.</p>
+        <h1 id="hero-title" class="reveal">Desk objects<br>with a <em>pulse.</em></h1>
+        <p class="hero-intro reveal">Original 3D-printed creatures, keycaps and stands—made one layer at a time, in colours that feel like you.</p>
+        <div class="hero-actions reveal">
+          <a class="button button-primary" href="#shop">Shop the drop <span aria-hidden="true">↘</span></a>
+          <button class="button button-ghost" type="button" data-randomize>Remix the object</button>
+        </div>
+        <div class="hero-notes reveal" aria-label="Product attributes">
+          <span>Made to order</span>
+          <span>PLA-based</span>
+          <span>Ships across India</span>
+        </div>
+      </div>
+
+      <div class="hero-stage" aria-label="Interactive three-dimensional product preview">
+        <canvas id="hero-canvas"></canvas>
+        <div class="stage-label stage-label-top"><span>01</span> Articulated form</div>
+        <div class="stage-label stage-label-bottom"><span>Drag</span> to rotate</div>
+        <div class="loading-mark" data-3d-loading>Building object…</div>
+      </div>
+
+      <p class="hero-index" aria-hidden="true">DROP<br>ZERO/ONE</p>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>PRINTED SLOWLY</span><b>✦</b><span>PLAYED WITH DAILY</span><b>✦</b><span>MADE FOR YOUR DESK</span><b>✦</b>
+        <span>PRINTED SLOWLY</span><b>✦</b><span>PLAYED WITH DAILY</span><b>✦</b><span>MADE FOR YOUR DESK</span><b>✦</b>
+      </div>
+    </div>
+
+    <section class="shop-section" id="shop" aria-labelledby="shop-title">
+      <div class="section-heading reveal">
+        <div>
+          <p class="eyebrow">Drop 01 / available now</p>
+          <h2 id="shop-title">Pick your<br>desk companion.</h2>
+        </div>
+        <p>Small-batch objects with tactile movement, crisp geometry and colours that refuse to disappear into the background.</p>
+      </div>
+
+      <div class="filter-row reveal" role="group" aria-label="Filter products">
+        <button class="filter is-active" type="button" data-filter="all">All objects</button>
+        <button class="filter" type="button" data-filter="creature">Creatures</button>
+        <button class="filter" type="button" data-filter="desk">Desk setup</button>
+        <button class="filter" type="button" data-filter="keycap">Keycaps</button>
+      </div>
+
+      <div class="product-grid" data-product-grid>
+        <article class="product-card product-card-featured reveal" data-category="creature">
+          <button class="product-visual visual-dragon" type="button" data-product-open="flex-dragon" aria-label="View Flex Dragon">
+            <span class="product-badge">Bestseller</span>
+            <div class="dragon-form" aria-hidden="true">
+              <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+            <span class="visual-caption">Moveable / No assembly</span>
+          </button>
+          <div class="product-meta">
+            <div><h3>Flex Dragon</h3><p>Articulated desk creature</p></div>
+            <strong>₹699</strong>
+          </div>
+          <button class="quick-add" type="button" data-add="flex-dragon">Add to bag <span>+</span></button>
+        </article>
+
+        <article class="product-card reveal" data-category="desk">
+          <button class="product-visual visual-stand" type="button" data-product-open="halo-stand" aria-label="View Halo Headphone Stand">
+            <div class="stand-form" aria-hidden="true"><i></i><b></b></div>
+            <span class="visual-caption">Balanced / Cable-ready</span>
+          </button>
+          <div class="product-meta">
+            <div><h3>Halo Stand</h3><p>Headphone home base</p></div>
+            <strong>₹1,299</strong>
+          </div>
+          <button class="quick-add" type="button" data-add="halo-stand">Add to bag <span>+</span></button>
+        </article>
+
+        <article class="product-card reveal" data-category="keycap">
+          <button class="product-visual visual-keycap" type="button" data-product-open="orbit-keycap" aria-label="View Orbit Keycap">
+            <div class="keycap-form" aria-hidden="true"><span>◉</span></div>
+            <span class="visual-caption">MX stem / Hand-finished</span>
+          </button>
+          <div class="product-meta">
+            <div><h3>Orbit Keycap</h3><p>One key, maximum character</p></div>
+            <strong>₹349</strong>
+          </div>
+          <button class="quick-add" type="button" data-add="orbit-keycap">Add to bag <span>+</span></button>
+        </article>
+
+        <article class="product-card reveal" data-category="desk">
+          <button class="product-visual visual-dock" type="button" data-product-open="grid-dock" aria-label="View Grid Controller Dock">
+            <div class="dock-form" aria-hidden="true"><i></i><i></i><b></b></div>
+            <span class="visual-caption">Universal / Weighted base</span>
+          </button>
+          <div class="product-meta">
+            <div><h3>Grid Dock</h3><p>Controller display stand</p></div>
+            <strong>₹999</strong>
+          </div>
+          <button class="quick-add" type="button" data-add="grid-dock">Add to bag <span>+</span></button>
+        </article>
+      </div>
+    </section>
+
+    <section class="customizer" id="customize" aria-labelledby="customize-title">
+      <div class="customizer-copy reveal">
+        <p class="eyebrow">Your object, your rules</p>
+        <h2 id="customize-title">Tune the colour.<br>Change the energy.</h2>
+        <p>Every object is printed after you order. Pick a finish that fits your setup—or deliberately doesn't.</p>
+        <div class="swatches" role="radiogroup" aria-label="Choose preview colour">
+          <button class="swatch is-selected" type="button" data-color="#ff5c35" style="--swatch:#ff5c35" role="radio" aria-checked="true"><span>Signal orange</span></button>
+          <button class="swatch" type="button" data-color="#c9ff3d" style="--swatch:#c9ff3d" role="radio" aria-checked="false"><span>Acid lime</span></button>
+          <button class="swatch" type="button" data-color="#725cff" style="--swatch:#725cff" role="radio" aria-checked="false"><span>Ultraviolet</span></button>
+          <button class="swatch" type="button" data-color="#eee9df" style="--swatch:#eee9df" role="radio" aria-checked="false"><span>Bone</span></button>
+          <button class="swatch" type="button" data-color="#151515" style="--swatch:#151515" role="radio" aria-checked="false"><span>Void black</span></button>
+        </div>
+        <p class="colour-name">Selected: <strong data-color-name>Signal orange</strong></p>
+      </div>
+      <div class="customizer-object reveal" aria-hidden="true">
+        <div class="morph-object" data-morph-object>
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        </div>
+        <span class="orbit-line orbit-line-one"></span>
+        <span class="orbit-line orbit-line-two"></span>
+        <p>Preview / 360°</p>
+      </div>
+    </section>
+
+    <section class="process" id="process" aria-labelledby="process-title">
+      <div class="process-sticky">
+        <p class="eyebrow">No warehouse. No overproduction.</p>
+        <h2 id="process-title">From a digital file<br>to your actual desk.</h2>
+      </div>
+      <ol class="process-list">
+        <li class="reveal"><span>01</span><div><h3>You choose</h3><p>Pick the object and colour that belongs in your setup.</p></div></li>
+        <li class="reveal"><span>02</span><div><h3>We print</h3><p>Your piece is made to order, layer by visible layer.</p></div></li>
+        <li class="reveal"><span>03</span><div><h3>We finish</h3><p>Edges are checked, moving parts are tested and the object is packed.</p></div></li>
+        <li class="reveal"><span>04</span><div><h3>You unbox</h3><p>Place it, pose it, use it—and send us the setup photo.</p></div></li>
+      </ol>
+    </section>
+
+    <section class="statement" aria-label="Brand statement">
+      <p class="statement-small reveal">Why make ordinary things?</p>
+      <p class="statement-big reveal">Your desk is a tiny world.<br><em>Build it like one.</em></p>
+      <div class="statement-object" aria-hidden="true"><span></span><span></span><span></span></div>
+    </section>
+
+    <section class="faq" id="faq" aria-labelledby="faq-title">
+      <div class="faq-heading reveal">
+        <p class="eyebrow">Useful answers</p>
+        <h2 id="faq-title">Before you ask.</h2>
+      </div>
+      <div class="faq-list">
+        <details class="reveal"><summary>How long does an order take?<span>+</span></summary><p>Because each object is made to order, production usually takes a few working days before dispatch. Exact timing is confirmed with your order.</p></details>
+        <details class="reveal"><summary>Will every print look identical?<span>+</span></summary><p>Small layer lines and minor variations are part of the 3D-printing process. Every piece is checked for fit and function before packing.</p></details>
+        <details class="reveal"><summary>Can I request another colour?<span>+</span></summary><p>Yes. Send a colour reference with your order request. Availability and any price difference will be confirmed before printing.</p></details>
+        <details class="reveal"><summary>Are these toys for small children?<span>+</span></summary><p>No. These are desk objects and may contain small or moving parts. Keep them away from children under three and heat sources.</p></details>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="final-cta-copy reveal">
+        <p class="eyebrow">Drop 01 is ready</p>
+        <h2>Give your desk<br>something to say.</h2>
+        <a class="button button-light" href="#shop">Shop all objects <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="final-sculpture" aria-hidden="true">
+        <i></i><i></i><i></i><i></i><i></i>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="#top"><span>FORM</span><b>/</b><span>SHIFT</span></a>
+    <p>Original 3D-printed desk objects.<br>Made to order in India.</p>
+    <div class="footer-links">
+      <a href="#shop">Shop</a><a href="#faq">Shipping</a><a href="#faq">Care</a><a href="mailto:">Contact</a>
+    </div>
+    <p class="footer-note">© <span data-year></span> FORM/SHIFT. Draft storefront—replace contact and checkout configuration before publishing.</p>
+  </footer>
+
+  <aside class="cart-drawer" data-cart-drawer aria-hidden="true" aria-labelledby="cart-title">
+    <div class="drawer-head"><h2 id="cart-title">Your bag</h2><button type="button" data-cart-close aria-label="Close shopping bag">×</button></div>
+    <div class="cart-empty" data-cart-empty><p>Your desk is still waiting.</p><a href="#shop" data-cart-close>Explore the drop</a></div>
+    <div class="cart-items" data-cart-items></div>
+    <div class="cart-footer" data-cart-footer hidden>
+      <div class="cart-total"><span>Subtotal</span><strong data-cart-total>₹0</strong></div>
+      <p>Shipping calculated when your order is confirmed.</p>
+      <button class="button button-primary checkout-button" type="button" data-checkout>Prepare order request</button>
+    </div>
+  </aside>
+  <div class="scrim" data-scrim hidden></div>
+
+  <dialog class="product-dialog" data-product-dialog>
+    <button class="dialog-close" type="button" data-dialog-close aria-label="Close product details">×</button>
+    <div class="dialog-visual" data-dialog-visual></div>
+    <div class="dialog-copy">
+      <p class="eyebrow" data-dialog-type></p>
+      <h2 data-dialog-name></h2>
+      <p data-dialog-description></p>
+      <ul data-dialog-features></ul>
+      <div class="dialog-buy"><strong data-dialog-price></strong><button class="button button-primary" type="button" data-dialog-add>Add to bag</button></div>
+    </div>
+  </dialog>
+
+  <dialog class="checkout-dialog" data-checkout-dialog>
+    <button class="dialog-close" type="button" data-checkout-close aria-label="Close order request">×</button>
+    <div class="checkout-copy">
+      <p class="eyebrow">Almost yours</p>
+      <h2>Prepare your order.</h2>
+      <p>This demo creates a ready-to-send order summary. Connect your WhatsApp number or checkout backend before publishing.</p>
+    </div>
+    <form data-order-form>
+      <label>Name<input name="name" required autocomplete="name" placeholder="Your name"></label>
+      <label>Phone<input name="phone" required inputmode="tel" autocomplete="tel" placeholder="Your WhatsApp number"></label>
+      <label>City / PIN code<input name="city" required autocomplete="postal-code" placeholder="Delivery city or PIN"></label>
+      <label>Notes<textarea name="notes" rows="3" placeholder="Colour requests or questions"></textarea></label>
+      <button class="button button-primary" type="submit">Create order summary</button>
+    </form>
+    <div class="order-result" data-order-result hidden>
+      <label>Copy and send this order request<textarea rows="9" readonly data-order-summary></textarea></label>
+      <button class="button button-primary" type="button" data-copy-order>Copy order request</button>
+      <p data-copy-status aria-live="polite"></p>
+    </div>
+  </dialog>
+
+  <div class="toast" data-toast role="status" aria-live="polite"></div>
+
+  <script src="three.min.js" defer></script>
+  <script src="app.js" defer></script>
+</body>
+</html>
